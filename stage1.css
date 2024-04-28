@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: auto;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#bottom-bar {
+    position: fixed;  /*make this relative and edit width*/
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+#redirect-button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Meditation Guru</title>
+
+  <script src="jquery-3.7.1.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Meditation Guru</a>
+          </div>
+          <!-- <ul class="navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+             <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+          </ul> -->
+          <div class="navbar-right">
+            <button class="open-button" onclick="openSignUpForm()">
+                <!--<div><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a>Sign Up</div>-->
+                Sign Up
+            </button>
+            <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+        </div>
+        </div>
+    </nav>
+
+  <div class="headtext">
+    <!-- <h1>Meditation With Guru</h1>  -->
+  </div>
+ <div class="section"> <!--The first two blocks -->
+    <div class="image-container">
+      <div class="image" style="background-image: url('monks.jpg')"></div>
+    </div>
+    <div class="block" data-aos="fade-up-right">
+      <h2>Guru is a professional monk who, over the past 16 years, has been with Buddhist monks in the Tibetan mountain. As a result of this Guru has gained important lessons about meditation and what the body is capable of and is
+        now here in NYUAD to teach their secrets.</h2>
+  </div>
+  </div>
+  <div class="section"> <!--The middle two blocks -->
+    <div class="image-container">
+      <div class="image" style="background-image: url('peace.jpg')"></div>
+    </div>
+    <div class="block" data-aos="fade-up-right">
+      <h2>Many of those who end up learning the course are often surprised by what is being taught, or even hesitant. This is normal as the knowledge is unconventional, but Guru promises that it will grant you internal peace like you've never experienced before.</h2>
+    </div>
+  </div>
+  <div class="section"> <!--The last two blocks -->
+    <div class="image-container">
+      <div class="image" style="background-image: url('stress.jpg')"></div>
+    </div>
+    <div class="block" data-aos="fade-up-right">
+      <h2>The course costs $1599 for a short 3-part series on how to achieve said peace and <b>remove any stress</b> you have been having in your day-to-day life.</h2>
+    </div>
+  </div>
+
+  <button class="open-button" onclick="openSignUpForm()">Open Form</button>
+
+<!-- The form -->
+<div class="form-popup" id="signUpForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Sign Up</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required></input>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required></input>
+
+    <button type="button" class="btn" onclick="openPayForm();closeSignUpForm()">Learn With Guru!</button>
+    <button type="button" class="btn cancel" onclick="closeSignUpForm()">Close</button>
+  </form>
+</div>
+
+<!-- payForm -->
+<div class="form-popup" id="payForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Payment</h1>
+  
+      <label for="email"><b>Cardholder Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required></input>
+  
+      <label for="psw"><b>Card Number</b></label>
+      <input type="text" placeholder="Enter Number" name="num" required></input>
+
+      <label for="psw"><b>Expiration Date</b></label>
+      <input type="text" placeholder="Enter Date" name="date" required></input>
+
+      <label for="psw"><b>CVV</b></label>
+      <input type="password" placeholder="Enter CVV" name="cvv" required></input>
+  
+      <button type="button" class="btn" onclick="closePayForm();advance()">Payment</button>
+      <button type="button" class="btn cancel" onclick="closePayForm()">Close</button>
+    </form>
+  </div>
+
+<canvas id="theCanvas" width="300" height="300"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>

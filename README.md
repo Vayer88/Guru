@@ -31,4 +31,4 @@ We also made use of color grading in order to make the color of the videos from 
 
 ## Web Implementation ##
 
-
+For Web Implementation, we needed to make a website that would look scammy in a sense. We used appealing imagery accompanies by elaborate descriptions to attract the potential customers and convince them to buy the service provided. Only after the signup and payment pages the user can see the content that is being sold, namely the three videos. it is a staged process, so videos are displayed in chronological order. In the end we have a credits page that allows the user to return to the main page if they wish to present the website to another person or rewatch the videos.
